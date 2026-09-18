@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tisha Koshti | SDET & Quality Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .shadow-neon-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .shadow-neon-hover:hover { 
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.55);
+            border-color: #00f2fe !important;
+            transform: translateY(-6px);
+        }
+        /* Smooth Fade-in for Hero Section */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-gray-200 font-sans transition-colors duration-500 selection:bg-[#00f2fe] selection:text-black overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-200 dark:border-gray-800/60 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold tracking-wider text-indigo-600 dark:text-[#00f2fe] hover:scale-105 transition-transform duration-300">
+                Tisha Koshti
+            </a>
+            <div class="flex items-center space-x-6">
+                <nav class="hidden md:flex space-x-6 text-sm uppercase tracking-wider font-semibold">
+                    <a href="#home" class="hover:text-indigo-600 dark:hover:text-[#00f2fe] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 dark:after:bg-[#00f2fe] hover:after:w-full after:transition-all after:duration-300">Home</a>
+                    <a href="#about" class="hover:text-indigo-600 dark:hover:text-[#00f2fe] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 dark:after:bg-[#00f2fe] hover:after:w-full after:transition-all after:duration-300">About</a>
+                    <a href="#skills" class="hover:text-indigo-600 dark:hover:text-[#00f2fe] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 dark:after:bg-[#00f2fe] hover:after:w-full after:transition-all after:duration-300">Skills</a>
+                    <a href="#projects" class="hover:text-indigo-600 dark:hover:text-[#00f2fe] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 dark:after:bg-[#00f2fe] hover:after:w-full after:transition-all after:duration-300">Projects</a>
+                </nav>
+                <button id="theme-toggle" class="p-2 rounded-full bg-slate-200 dark:bg-gray-800 text-amber-500 dark:text-yellow-400 focus:outline-none text-xl shadow-md hover:rotate-45 transition-transform duration-500">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 pt-24 md:pt-0 gap-8">
+        <div class="md:w-3/5 space-y-4 text-center md:text-left order-2 md:order-1 animate-fade-up">
+            
+            <span class="text-sm md:text-base font-bold tracking-widest text-indigo-600 dark:text-[#00f2fe] uppercase block mb-1">
+                Flutter Developer | Software Development Engineer in Test (SDET) | Quality Engineer
+            </span>
+            
+            <p class="text-slate-600 dark:text-gray-400 max-w-xl text-base md:text-lg leading-relaxed pt-2">
+                An Integrated MCA student with hands-on experience building cross-platform mobile applications using Flutter & Dart. Proficient in integrating backend solutions and dedicated to delivering clean, bug-free software through automated testing and strong QA practices.
+            </p>
+        </div>
+        
+        <div class="md:w-2/5 flex justify-center order-1 md:order-2 mt-4 md:mt-0 animate-fade-up" style="animation-delay: 0.2s;">
+            <div class="relative w-64 h-72 md:w-80 md:h-[24rem] rounded-3xl p-1.5 bg-gradient-to-b from-[#00f2fe] to-transparent shadow-xl transition-all duration-500 hover:scale-105 border border-transparent hover:border-[#00f2fe]/40">
+                <div class="w-full h-full rounded-3xl bg-slate-100 dark:bg-[#0b0f19] overflow-hidden p-1">
+                    <img src="Profile.jpg" alt="Tisha Koshti Profile Photo" class="w-full h-full object-cover object-center rounded-2xl filter contrast-105">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="py-24 bg-slate-100 dark:bg-[#0d1322]">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-900 dark:text-white mb-2 uppercase tracking-wide" data-aos="fade-up">About <span class="text-indigo-600 dark:text-[#00f2fe]">Me</span></h2>
+            <div class="h-1 w-12 bg-indigo-600 dark:bg-[#00f2fe] mx-auto rounded mb-12" data-aos="zoom-in" data-aos-delay="200"></div>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-base leading-relaxed">
+                <div class="bg-white dark:bg-[#0b0f19] p-6 rounded-xl border border-slate-200 dark:border-gray-800 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-bold text-lg text-indigo-600 dark:text-[#00f2fe] mb-3"><i class="fas fa-mobile-alt mr-2"></i> Mobile & Frontend</h3>
+                    <p class="text-slate-600 dark:text-gray-400">Experience in building responsive applications using Flutter, Dart, HTML, and CSS.</p>
+                </div>
+                <div class="bg-white dark:bg-[#0b0f19] p-6 rounded-xl border border-slate-200 dark:border-gray-800 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-bold text-lg text-indigo-600 dark:text-[#00f2fe] mb-3"><i class="fas fa-server mr-2"></i> Backend & Architecture</h3>
+                    <p class="text-slate-600 dark:text-gray-400">Knowledge of PHP, Laravel, C#, .NET, Firebase, and databases like MongoDB and PostgreSQL.</p>
+                </div>
+                <div class="bg-white dark:bg-[#0b0f19] p-6 rounded-xl border border-slate-200 dark:border-gray-800 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="font-bold text-lg text-indigo-600 dark:text-[#00f2fe] mb-3"><i class="fas fa-shield-virus mr-2"></i> Quality Mindset</h3>
+                    <p class="text-slate-600 dark:text-gray-400">Proficient in TypeScript, Postman, and Software Testing concepts to ensure bug-free, scalable deployments.</p>
+                </div>
+                <div class="bg-white dark:bg-[#0b0f19] p-6 rounded-xl border border-slate-200 dark:border-gray-800 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="font-bold text-lg text-indigo-600 dark:text-[#00f2fe] mb-3"><i class="fas fa-crosshairs mr-2"></i> What I Do</h3>
+                    <p class="text-slate-600 dark:text-gray-400">I don't just find bugs; I understand the code behind them and write automated scripts to prevent them. Based in India 🇮🇳.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-900 dark:text-white mb-2 uppercase tracking-wide" data-aos="fade-up">Technical <span class="text-indigo-600 dark:text-[#00f2fe]">Arsenal</span></h2>
+        <div class="h-1 w-12 bg-indigo-600 dark:bg-[#00f2fe] mx-auto rounded mb-16" data-aos="zoom-in" data-aos-delay="200"></div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white dark:bg-[#0d1322] p-6 rounded-2xl border border-slate-200 dark:border-gray-800/80 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-blue-500/10 text-blue-500 dark:text-blue-400"><i class="fas fa-mobile-alt text-xl"></i></div>
+                    <h3 class="font-bold text-slate-900 dark:text-white text-base uppercase tracking-wider">Mobile</h3>
+                </div>
+                <p class="text-slate-600 dark:text-gray-400 text-sm font-medium leading-relaxed">Flutter, Dart</p>
+            </div>
+
+            <div class="bg-white dark:bg-[#0d1322] p-6 rounded-2xl border border-slate-200 dark:border-gray-800/80 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-orange-500/10 text-orange-500"><i class="fas fa-code text-xl"></i></div>
+                    <h3 class="font-bold text-slate-900 dark:text-white text-base uppercase tracking-wider">Frontend</h3>
+                </div>
+                <p class="text-slate-600 dark:text-gray-400 text-sm font-medium leading-relaxed">HTML, CSS</p>
+            </div>
+
+            <div class="bg-white dark:bg-[#0d1322] p-6 rounded-2xl border border-slate-200 dark:border-gray-800/80 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-500 dark:text-indigo-400"><i class="fas fa-server text-xl"></i></div>
+                    <h3 class="font-bold text-slate-900 dark:text-white text-base uppercase tracking-wider">Backend</h3>
+                </div>
+                <p class="text-slate-600 dark:text-gray-400 text-sm font-medium leading-relaxed">PHP, Laravel, C#, .NET</p>
+            </div>
+
+            <div class="bg-white dark:bg-[#0d1322] p-6 rounded-2xl border border-slate-200 dark:border-gray-800/80 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-green-500/10 text-green-500"><i class="fas fa-database text-xl"></i></div>
+                    <h3 class="font-bold text-slate-900 dark:text-white text-base uppercase tracking-wider">Database</h3>
+                </div>
+                <p class="text-slate-600 dark:text-gray-400 text-sm font-medium leading-relaxed">Firebase, MongoDB, pgAdmin4</p>
+            </div>
+
+            <div class="bg-white dark:bg-[#0d1322] p-6 rounded-2xl border border-slate-200 dark:border-gray-800/80 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-red-500/10 text-red-500 dark:text-red-400"><i class="fas fa-vial text-xl"></i></div>
+                    <h3 class="font-bold text-slate-900 dark:text-white text-base uppercase tracking-wider">QA & Testing</h3>
+                </div>
+                <p class="text-slate-600 dark:text-gray-400 text-sm font-medium leading-relaxed">TypeScript, Postman (API Testing), QA Testing (Automation)</p>
+            </div>
+
+            <div class="bg-white dark:bg-[#0d1322] p-6 rounded-2xl border border-slate-200 dark:border-gray-800/80 shadow-sm shadow-neon-hover" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2.5 rounded-xl bg-pink-500/10 text-pink-500 dark:text-pink-400"><i class="fas fa-tools text-xl"></i></div>
+                    <h3 class="font-bold text-slate-900 dark:text-white text-base uppercase tracking-wider">Tools</h3>
+                </div>
+                <p class="text-slate-600 dark:text-gray-400 text-sm font-medium leading-relaxed">Figma (Design & UI), VS Code</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-slate-100 dark:bg-[#0d1322] px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-900 dark:text-white mb-2 uppercase tracking-wide" data-aos="fade-up">My <span class="text-indigo-600 dark:text-[#00f2fe]">Projects</span></h2>
+            <div class="h-1 w-12 bg-indigo-600 dark:bg-[#00f2fe] mx-auto rounded mb-16" data-aos="zoom-in" data-aos-delay="200"></div>
+
+            <div class="grid md:grid-cols-1 gap-8 justify-center max-w-xl mx-auto" data-aos="zoom-in-up" data-aos-delay="100">
+                <div class="bg-white dark:bg-[#0b0f19] rounded-2xl overflow-hidden border border-slate-200 dark:border-gray-800/80 shadow-lg shadow-neon-hover flex flex-col">
+                    
+                    <div class="h-56 w-full relative overflow-hidden bg-gradient-to-tr from-indigo-50 to-slate-200 dark:from-[#0d1322] dark:to-[#1e293b] flex items-center justify-center p-6 border-b border-slate-200/60 dark:border-gray-800/50">
+                        <img src="FunPark_Logo.jpeg" alt="FunPark Mobile App Logo" class="max-w-full max-h-full object-contain rounded-xl drop-shadow-xl transition-transform duration-500 hover:scale-105">
+                    </div>
+                    
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-1.5">
+                            <div class="flex items-center justify-between flex-wrap gap-2">
+                                <h3 class="text-xl font-extrabold text-slate-900 dark:text-white tracking-wide">
+                                    FunPark 🎢
+                                </h3>
+                                <span class="text-[11px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-700 dark:bg-[#00f2fe]/10 dark:text-[#00f2fe] border border-indigo-200 dark:border-[#00f2fe]/20">Mobile Application</span>
+                            </div>
+                            <p class="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">
+                                FunPark is a high-performance, cross-platform mobile application developed using Flutter and Firebase. This app is designed to provide a seamless, secure, and dynamic experience for users on both Android and iOS platforms.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 pt-1">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-gray-800 text-slate-700 dark:text-gray-300 border border-slate-200 dark:border-gray-700 font-semibold text-xs">Flutter</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-gray-800 text-slate-700 dark:text-gray-300 border border-slate-200 dark:border-gray-700 font-semibold text-xs">Dart</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-gray-800 text-slate-700 dark:text-gray-300 border border-slate-200 dark:border-gray-700 font-semibold text-xs">Firebase</span>
+                        </div>
+
+                        <div class="flex space-x-6 pt-4 border-t border-slate-100 dark:border-gray-800/60">
+                            <a href="https://github.com/Tishakoshti/funpark" target="_blank" class="text-slate-600 dark:text-gray-400 hover:text-[#00f2fe] dark:hover:text-[#00f2fe] text-sm font-bold flex items-center gap-2 transition-all duration-300 hover:scale-105"><i class="fab fa-github text-base"></i> GitHub</a>
+                            <a href="https://github.com/Tishakoshti/funpark/releases/tag/FunPark.apk" download="FunPark.apk" class="text-indigo-600 dark:text-[#00f2fe] hover:underline text-sm font-bold flex items-center gap-2 transition-all duration-300 hover:text-indigo-500 dark:hover:text-[#00d8e4] hover:scale-105"><i class="fas fa-download text-sm"></i> Download APK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center space-y-6" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white uppercase tracking-wide">Connect <span class="text-indigo-600 dark:text-[#00f2fe]">With Me</span></h2>
+        <div class="h-1 w-12 bg-indigo-600 dark:bg-[#00f2fe] mx-auto rounded"></div>
+        
+        <div class="flex justify-center space-x-8 text-3xl pt-4">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tishapk0225@gmail.com" target="_blank" class="text-slate-500 hover:text-indigo-600 dark:hover:text-[#00f2fe] hover:scale-120 transition-all duration-300">
+                    <i class="fas fa-envelope"></i>
+                </a>            
+                <a href="https://github.com/Tishakoshti" target="_blank" class="text-slate-500 hover:text-black dark:hover:text-white hover:scale-120 transition-all duration-300"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tisha-koshti-860b502a8" target="_blank" class="text-slate-500 hover:text-blue-600 dark:hover:text-[#00f2fe] hover:scale-120 transition-all duration-300"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-200 dark:border-gray-900 py-8 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Tisha Koshti. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Smooth Scroll Animations
+        AOS.init({
+            duration: 800, 
+            easing: 'cubic-bezier(0.4, 0, 0.2, 1)', 
+            once: true, 
+            offset: 120 
+        });
+
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                themeIcon.className = 'fas fa-sun';
+            } else {
+                htmlElement.classList.add('dark');
+                themeIcon.className = 'fas fa-moon';
+            }
+        });
+    </script>
+</body>
+</html>
